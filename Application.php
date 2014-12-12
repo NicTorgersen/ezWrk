@@ -1,7 +1,7 @@
 <?php
 class Application {
 	private $_controller,
-			$_action;
+		$_action;
 
 	public function __construct($ctrl, $act) {
 		$this->_controller = ucfirst($ctrl) . "Controller";
