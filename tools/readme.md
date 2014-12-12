@@ -1,0 +1,1 @@
+Some simple tools for sessions, inputs, cookies, reading from config or redirection (used internally)

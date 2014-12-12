@@ -3,12 +3,15 @@
 	ini_set('display_errors', true);
 	ini_set('display_startup_errors', true);
 
+	// variables from url
 	$vars = array();
 
+	// set default controller and action
 	if (!isset($_GET['controller'], $_GET['action'])) {
 		$vars['controller'] = 'login';
 		$vars['action'] = 'index';
 	} else {
+	// execute a controller with a given action
 		$vars['controller'] = $_GET['controller'];
 		$vars['action'] = $_GET['action'];
 	}

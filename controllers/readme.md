@@ -1,0 +1,1 @@
+Controllers should extend from the base controller in this directory, this includes some functionality like rendering views with PHP variables etc.
