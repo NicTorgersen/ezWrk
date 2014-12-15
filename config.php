@@ -1,6 +1,9 @@
 <?php
 	$GLOBALS['config'] = array(
 		'404' => array(
-			'msg' => '404 not found.'
-		)
+			'msg' => 'Not found'
+		),
+        '200' => array(
+            'msg' => 'OK'
+        )
 	);

@@ -10,7 +10,7 @@
 	// execute a controller with a given action
 		$do = $_GET['do'];
 	}
-	
+	require_once("tools/Config.tool.php");
 	require_once("autoload.php");
     require_once("vendor/autoload.php");
 

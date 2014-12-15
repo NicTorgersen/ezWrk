@@ -1,23 +1,23 @@
 <?php
 	class Config {
-		private $_config;
+		private $_config = array();
 
 		public function __construct($filePath, $configName) {
 			if (is_readable($filePath)) {
-				require_once($filePath);
-				$configVars = get_defined_vars();
-				$this->_config = $configVars[$configName];
+				require_once(dirname(__DIR__) . "/" . $filePath);
+				$this->_config = $GLOBALS[$configName];
 			}
 		}
 
 
-		public static function get($path = null) {
+		public function get($path = null) {
+			$config = null;
+
 			if ($path) {
 				$path = explode('/', $path);
-
 				foreach ($path as $bit) {
-					if (isset($config[$bit])) {
-						$config = $config[$bit];
+					if (isset($this->_config[$bit])) {
+						$config = $this->_config[$bit];
 					}
 				}
 
