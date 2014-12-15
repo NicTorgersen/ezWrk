@@ -2,7 +2,9 @@
 
 	function cmvcAutoload ($class) {
 		if (!class_exists($class, false)) {
-			// cba with namespaced shtick!
+			// because we're namespacing
+			// here we just use the last
+			// value of the exploded class name
 			$class = explode('\\', $class);
 			$class = end($class);
 
