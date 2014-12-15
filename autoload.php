@@ -9,6 +9,8 @@
 			require('models/' . $class . '.php');
 		} elseif (is_readable('tools/' . $class . '.tool' . '.php')) {
 			require('tools/' . $class . '.tool' . '.php');
+		} elseif (is_readable('error/' . $class . '.php')) {
+			require('error/' . $class . '.php');
 		}
 	}
 
