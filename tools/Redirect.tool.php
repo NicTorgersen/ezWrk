@@ -1,4 +1,6 @@
 <?php
+namespace ezWrk\Tools;
+
 class Redirect {
 	public static function to($controller = null, $action = null) {
 		if ($controller != null && $action != null) {

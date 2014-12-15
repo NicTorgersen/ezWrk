@@ -1,4 +1,5 @@
-<?php
+<?php 
+namespace ezWrk\Controllers;
 
 class Controller {
 

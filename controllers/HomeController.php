@@ -1,17 +1,17 @@
 <?php
-    class HomeController extends Controller {
+namespace ezWrk\Controllers;
 
-        public function __construct () {
+class HomeController extends Controller {
 
-        }
-
-        public function index () {
-            $options = array(
-                'options' => array(
-                    'title' => 'Home'
-                )
-            );
-            $this->render("index.view.html", $options, "html");
-        }
-
+    public function __construct () {
     }
+
+    public function index () {
+        $options = array(
+            'options' => array(
+                'title' => 'Home'
+            )
+        );
+        $this->render("index.view.html", $options, "html");
+    }
+}

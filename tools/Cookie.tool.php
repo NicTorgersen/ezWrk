@@ -1,4 +1,5 @@
 <?php
+namespace ezWrk\Tools;
 
 class Cookie {
 	public static function get ($name) {

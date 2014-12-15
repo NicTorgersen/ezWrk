@@ -1,12 +1,14 @@
 <?php
-	class wrkReturnCode {
-		private $_config;
+namespace ezWrk\Error;
 
-		public function __construct(Config $config) {
-			$this->_config = $config;
-		}
+class wrkReturnCode {
+	private $_config;
 
-		public function get($errorCode) {
-			return $this->_config->get($errorCode);
-		}
+	public function __construct(\ezWrk\Tools\Config $config) {
+		$this->_config = $config;
 	}
+
+	public function get($errorCode) {
+		return $this->_config->get($errorCode);
+	}
+}

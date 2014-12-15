@@ -1,4 +1,6 @@
 <?php
+namespace ezWrk\Tools;
+
 class Input {
 
 	public static function find ($param, $mode = true) {

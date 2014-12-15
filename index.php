@@ -13,6 +13,5 @@
 	require_once("tools/Config.tool.php");
 	require_once("autoload.php");
     require_once("vendor/autoload.php");
-
-	$app = new Application($do);
+	$app = new \ezWrk\Application($do);
 	$app->run();

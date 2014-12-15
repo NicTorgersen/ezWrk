@@ -1,6 +1,12 @@
 <?php
 
 	function cmvcAutoload ($class) {
+		// cba with namespaced shtick!
+		$class = explode('\\', $class);
+		$class = end($class);
+
+		var_dump($class);
+
 		if (is_readable($class . '.php')) {
 			require($class . '.php');
 		} elseif (is_readable('controllers/' . $class . '.php')) {
