@@ -10,8 +10,8 @@ class Controller {
 	public static function render($viewFile, array $params = array(), $mode = null, $layout = null) {
 		
 		if ($mode === "html") {
-			$loader = new Twig_Loader_Filesystem('views');
-			$twig = new Twig_Environment($loader);
+			$loader = new \Twig_Loader_Filesystem('views');
+			$twig = new \Twig_Environment($loader);
 			echo $twig->render($viewFile, $params);
 			return;
 		}
