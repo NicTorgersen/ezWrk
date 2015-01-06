@@ -2,10 +2,6 @@
 namespace ezWrk\Controllers;
 
 class HomeController extends Controller {
-
-    public function __construct () {
-    }
-
     public function index () {
         $options = array(
             'options' => array(
